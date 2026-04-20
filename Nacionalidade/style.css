@@ -1,0 +1,27 @@
+body{
+background: gray;
+
+}
+header{
+     text-align: center;
+     color: white;
+     font: normal 19px Arial;
+}
+section{
+      border-radius: 10px; /* Modificar bordas*/
+      padding: 15px; /*Espaçamentos palavra*/
+      width: 500px; /*Largura*/
+      margin: auto; /*Centralizar*/
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+
+}
+div{
+    text-align: center;
+    padding: 30px;
+}
+img{
+     width: 300px;
+     padding: 20px;
+     
+}
+

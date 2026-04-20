@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrangeiros</title>
+    <style>
+        Body {
+        background-color: rgba(233, 243, 146, 0.615);
+        font: normal 20pt TimesNewRoman;
+        }
+        </style>
+</head>
+<body>
+    <h1>Descubra sua nacionalidade</h1>
+    País: <input type="text" name="text1" id="text1">
+    
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res">Seu país é...</div>
+    <script>
+       function verificar() {
+         var país = document.getElementById('text1').value
+         var res = document.getElementById('res') 
+
+        res.innerHTML = (`<p> Vivendo no <strong> ${país} </strong> </p>`)
+        
+        if (país == 'Brasil'){
+        res.innerHTML += '<p> Você é <strong> Brasileiro </strong> </p>'
+        
+        } 
+        else {
+         res.innerHTML += '<p> Você é <strong> Estrangeiro </strong> </p> '
+         
+        }
+        
+    }
+
+
+
+    </script>
+</body>
+</html>
